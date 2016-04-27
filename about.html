@@ -2,68 +2,40 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-	<title>about </title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	
-	<style>
-	body {
-    background: #c7b39b url(Miami3.jpg);
-	}
-	.col-md-4 {
-	background-color: brown;
-	height:100px;
-	border: 1px solid white;
-	}
-	.logo {
-	display: block;
-	margin: 0 auto;
-	}
-	.menu-item{
-	width:200px;
-	    padding: 20px 0 0 0;
-	}
-	@media (max-width: 1200px){
-		.menu-item{
-		width :150px;
-		}
-	}
-	.content-wrapper{
-	background-color: rgba(215, 147, 78, 0.5);
-	}
-	</style>
-	
-	</head>
-	<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-					<!--Это логотип-->
-					<a href="index.html"><img src="logo1.png" class="logo"></a>
-			</div> 
-			<div class="col-md-9 col-xs-12">
-				<!--Верхнее меню-->	
-				<a href="index.html"><img src="main.png" class="menu-item" 
-				onmouseover="this.src='Main_Mouse.png'"
-				onmouseout="this.src='Main.png'"></a>
-				
-				<a href="about.html"> <img src="about_Mouse.png" class="menu-item"
-				onmouseover="this.src='about_Mouse.png'"
-				onmouseout="this.src='about_Mouse.png'"></a>
-				
-				<a href="media.html"><img src="Media.png" class="menu-item"
-				onmouseover="this.src='Media_Mouse.png'"
-				onmouseout="this.src='Media.png'"></a>
-				
-				<a href="contacts.html"><img src="Contacts.png" class="menu-item"
-				onmouseover="this.src='Contacts_Mouse.png'"
-				onmouseout="this.src='Contacts.png'"></a>
-			</div>
-		</div>
-		<div class="row">
-		<div class="col-md-12 content-wrapper">
-			
-		</div>
-		</div>
-	</div>
+    <title>about </title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!--Это логотип-->
+            <a href="index.html" class="logo"><img src="img/logo1.png"></a>
+        </div>
+        <div class="col-md-9 col-xs-12">
+            <!--Верхнее меню-->
+            <a href="index.html"><img src="img/main.png" class="menu-item"
+                                      onmouseover="this.src='img/main_mouse.png'"
+                                      onmouseout="this.src='img/main_mouse.png'"></a>
+
+            <a href="About.html"> <img src="img/about_mouse.png" class="menu-item"
+                                       onmouseover="this.src='img/about_mouse.png'"
+                                       onmouseout="this.src='img/about.png'"></a>
+
+            <a href="media.html"><img src="img/media.png" class="menu-item"
+                                      onmouseover="this.src='img/media_mouse.png'"
+                                      onmouseout="this.src='img/media.png'"></a>
+
+            <a href="сontacts.html"><img src="img/contacts.png" class="menu-item"
+                                         onmouseover="this.src='img/contacts_mouse.png'"
+                                         onmouseout="this.src='img/contacts.png'"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 content-wrapper">
+        </div>
+    </div>
+</div>
 </body>
 </html>

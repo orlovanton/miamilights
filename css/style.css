@@ -1,5 +1,6 @@
 body {
     background: #c7b39b url(../img/miami3.jpg);
+    font-size: 2em;
 }
 .col-md-4 {
     background-color: brown;
@@ -36,4 +37,11 @@ body {
     height: 334px;
     overflow: none;
     margin: 5% auto;
+}
+
+.clearfix {
+    overflow: auto;
+}
+.img-in-text{
+    margin: 0 10px 10px 10px ;
 }

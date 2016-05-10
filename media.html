@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <title>Media </title>
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/css/flarevideo.css" type="text/css">
-    <link rel="stylesheet" href="lib/css/flarevideo.default.css" type="text/css">
-
-    <link rel="stylesheet" href="lib/css/screen.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="lib/css/lightbox.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,7 +20,7 @@
                                       onmouseover="this.src='img/main_mouse.png'"
                                       onmouseout="this.src='img/main_mouse.png'"></a>
 
-            <a href="about.html"> <img src="img/about.png" class="menu-item"
+            <a href="About.html"> <img src="img/about.png" class="menu-item"
                                        onmouseover="this.src='img/about_mouse.png'"
                                        onmouseout="this.src='img/about.png'"></a>
 
@@ -48,42 +44,63 @@
                     </object>
                 </div>
             </div>
+
             <!--тут будет видео -->
+
+
             <div class="row">
                 <div class="col-xs-12 col-sm-4  col-md-3 text-center">
-                    <a href="ImagesGallery/MiamiBeach.jpg" rel="lightbox"
+                    <a href="ImagesGallery/MiamiBeach.jpg" data-lightbox="roadtrip"
                        title="Майами-Бич. Курортный пригород Майами-Сити, хотя и находится рядом с центром. Знаменит своими зданиями середины века в стиле Ар-Деко."><img
                             src="ImagesGallery/MiamiBeachSmall.jpg" alt=""/></a>
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-3 text-center">
-                    <a href="ImagesGallery/Villa.jpg" rel="lightbox"
-                       title="Построенный в начале 20 века дворец богатого промышленника. Ныне - музей."><img
-                            src="ImagesGallery/VillaSmall.jpg" alt=""/></a>
+                    <a href="ImagesGallery/Villa.jpg" data-lightbox="roadtrip"
+                       title="Построенный в начале 20 века дворец богатого промышленника. Ныне - музей.">
+                        <img src="ImagesGallery/VillaSmall.jpg" alt=""/></a>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-3 text-center">
-                    <a href="ImagesGallery/cathedral.jpg" rel="lightbox"
-                       title="Кафедральный собор Тринити Эпископал"><img src="ImagesGallery/cathedralSmall.jpg" alt=""/></a>
+                    <a href="ImagesGallery/cathedral.jpg" data-lightbox="roadtrip"
+                       title="Кафедральный собор Тринити Эпископал">
+                        <img src="ImagesGallery/cathedralSmall.jpg" alt=""/>
+                    </a>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-3 text-center">
-                    <a href="ImagesGallery/Miami.jpg" rel="lightbox" title="Добро пожаловать в Майами-Сити."><img
-                            src="ImagesGallery/MiamiSmall.jpg" alt=""/></a>
+                    <a href="ImagesGallery/Miami.jpg" data-lightbox="roadtrip" title="Добро пожаловать в Майами-Сити.">
+                        <img src="ImagesGallery/MiamiSmall.jpg" alt=""/>
+                    </a>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-12 text-center">
-                    <a href="ImagesGallery/Bash.jpg" rel="lightbox"
-                       title="Башня Свободы. Ныне - Центр приема иммигрантов из Кубы."><img
-                            src="ImagesGallery/BashSmall.jpg" alt=""/></a>
+                    <br>
+                    <a href="ImagesGallery/Bash.jpg" data-lightbox="roadtrip"
+                       title="Башня Свободы. Ныне - Центр приема иммигрантов из Кубы.">
+                        <img src="ImagesGallery/BashSmall.jpg" alt=""/>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-md-12 footer">
+            <p><a href="http://vk.com/scyscaper"> Автор сайта</a></p>
+            Источники: <br>
+            <a href="https://commons.wikimedia.org/wiki/File:Miami_FL_Trinity_Episc_Cathedral01.jpg"> Wikimedia </a>
+            <br>
+            <a href="http://tonkosti.ru/%D0%9C%D0%B0%D0%B9%D0%B0%D0%BC%D0%B8"> Тонкости туризма </a>
+        </div>
+    </div>
 </div>
+
 <!--скрипты всегда идут внизу-->
-
 <script src="lib/js/jquery-1.7.2.min.js"></script>
-<script src="lib/js/lightbox.js"></script>
-
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+</script>
 
 </body>
 </html>
